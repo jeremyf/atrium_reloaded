@@ -1,5 +1,8 @@
+require 'active_record'
 module AtriumReloaded
   class Collection < ActiveRecord::Base
+    self.table_name = 'atrium_reloaded_collections'
+
     attr_accessible(
       :collection_description,
       :collection_items,
@@ -10,5 +13,9 @@ module AtriumReloaded
       :title_markup,
       :url_slug
     )
+
+    def to_s
+      title
+    end
   end
 end

@@ -1,7 +1,11 @@
-require 'test_helper'
+require_relative 'test_helper_lite'
+require 'atrium_reloaded'
 
-class AtriumReloadedTest < ActiveSupport::TestCase
-  test "truth" do
-    assert_kind_of Module, AtriumReloaded
+describe AtriumReloaded do
+  subject { AtriumReloaded }
+
+  it 'is a module' do
+    subject.must_be_kind_of(Module)
   end
+
 end
