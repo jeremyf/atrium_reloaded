@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  url_slug: MyString
+  filter_query_params: MyString
+  theme: MyString
+  title_markup: MyText
+  collection_description: MyText
+  search_instructions: MyText
+  collection_items: MyText
+
+two:
+  title: MyString
+  url_slug: MyString
+  filter_query_params: MyString
+  theme: MyString
+  title_markup: MyText
+  collection_description: MyText
+  search_instructions: MyText
+  collection_items: MyText
