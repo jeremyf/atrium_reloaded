@@ -1,6 +1,6 @@
-# require 'bundler/setup'
+require 'bundler/setup'
 require_relative 'test_helper_lite'
-gem 'activerecord-nulldb-adapter'
+
 
 module TestHelpers
   def setup_nulldb

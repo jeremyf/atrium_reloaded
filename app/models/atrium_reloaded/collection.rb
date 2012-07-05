@@ -15,7 +15,9 @@ module AtriumReloaded
     )
 
     def to_s
-      title
+      title.present? ? title : 'Unnamed Collection'
     end
+
+    has_many :exhibits, :dependent => :destroy
   end
 end

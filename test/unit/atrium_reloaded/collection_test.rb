@@ -10,7 +10,13 @@ describe AtriumReloaded::Collection do
   subject {AtriumReloaded::Collection.new }
 
   it '#to_s' do
+    subject.to_s.must_equal 'Unnamed Collection'
     subject.title = 'Hello'
     subject.to_s.must_equal 'Hello'
   end
+
+  it 'has namespaced table_name' do
+    subject.class.table_name.must_equal 'atrium_reloaded_collections'
+  end
+
 end

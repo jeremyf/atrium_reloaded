@@ -12,5 +12,6 @@ class CreateAtriumReloadedCollections < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :atrium_reloaded_collections, :url_slug
   end
 end

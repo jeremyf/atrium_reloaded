@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120705182814) do
+ActiveRecord::Schema.define(:version => 20120705202858) do
 
   create_table "atrium_reloaded_collections", :force => true do |t|
     t.string   "title"
@@ -25,5 +25,13 @@ ActiveRecord::Schema.define(:version => 20120705182814) do
     t.datetime "created_at",             :null => false
     t.datetime "updated_at",             :null => false
   end
+
+  create_table "atrium_reloaded_exhibits", :force => true do |t|
+    t.integer  "collection_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "atrium_reloaded_exhibits", ["collection_id"], :name => "index_atrium_reloaded_exhibits_on_collection_id"
 
 end
